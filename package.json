@@ -10,10 +10,21 @@
   },
   "dependencies": {
     "@next/font": "13.4.7",
+    "@sendgrid/mail": "^7.7.0",
+    "cloudinary": "^1.37.2",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
-    "next": "13.4.7",
+    "framer-motion": "^10.12.17",
+    "mongoose": "^7.3.1",
+    "mongoose-paginate-v2": "^1.7.1",
+    "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   }
 }
