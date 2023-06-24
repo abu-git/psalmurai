@@ -13,7 +13,7 @@ function MiniLanding({header}) {
                     className='object-cover brightness-50'
                 />
 
-                <h2 className='text-center text-2xl md:text-5xl font-bold text-white brightness-200 -mt-14 md:-mt-[7.5rem] lg:-mt-[8.7rem]'>{header}</h2>
+                <h2 className='text-center text-2xl md:text-5xl font-bold text-white brightness-200 -mt-11 md:-mt-[7.5rem] lg:-mt-[8.7rem]'>{header}</h2>
             </div>
         </div>
     )
