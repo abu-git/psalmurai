@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Navigation from '@/components/Navigation'
 import MiniLanding from '@/components/MiniLanding'
-//import VideosContent from '@/components/VideosContent'
+import BioContent from '@/components/BioContent'
 import Footer from '@/components/Footer'
 
 import { motion } from 'framer-motion'
@@ -19,6 +19,8 @@ function Biography() {
             >
                 <Navigation />
                 <MiniLanding header="biography" />
+                <BioContent />
+                <Footer />
             </motion.main>
         </>
     )
