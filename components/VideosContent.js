@@ -6,6 +6,14 @@ import LeftVideo from './LeftVideo'
 function VideosContent() {
     return (
         <div className='bg-[#f4fdee] py-14 px-8 md:px-32 lg:px-72 md:mt-16 lg:mt-20 w-full'>
+            <LeftVideo title="God Level" embed="pQBOc0C3EHk" content="Music Video for &apos;God Level&apos; from the the &apos;Enter the Double Dragon&apos; EP with Teck Zilla" />
+
+            <RightVideo title="Here We Go" embed="N3EusGoprtE" content="A 2019 Music Video for &apos;Here We Go&apos; with producer and rapper Xblaze" />
+
+            <LeftVideo title="Paul Bearer (Lyric Video)" embed="IZmf4Ytzd0M" content="Written and Performed by Psalmurai. Animated by Samuel Achema for Block20Studios. Beat by 9th Wonder" />
+
+            <RightVideo title="Love God and HipHop" embed="xLjoQ890mEw" content="Music video for &apos;Love God and HipHop&apos;. Visuals and Effects by Samuel Achema for Block20Studios. Beat by 9th Wonder" />
+
             <LeftVideo title="Experience (The Prophet)" embed="2or45jXMIdQ" content="A 2018 visual for &apos;Experience (The Prophet)&apos;. Produced by 9th Wonder. Directed by Samuel Achema" />
 
             <RightVideo title="Sunk (freestyle)" embed="I7ptctQclyo" content="A 2018 visual for &apos;Sunk (Freestyle)&apos;. Beat by 9th Wonder. Directed by Samuel Achema" />

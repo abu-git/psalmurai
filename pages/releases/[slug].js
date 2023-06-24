@@ -95,7 +95,7 @@ export async function getServerSideProps({ params: {slug}}){
         cloud_name: 'dbqn6vejg'
     })
 
-    const cloudinaryUrl = cloudinary.url('metaSlug_oal5ip', {
+    const cloudinaryUrl = cloudinary.url('metaBG_hukufg', {
         width: 1012,
         height: 506,
         transformation: [

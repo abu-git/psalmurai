@@ -22,7 +22,7 @@ function BioContent() {
                 Psalmurai is a Nigerian Hip Hop artist sometimes referred to as &apos;Psalmurai Pseven&apos;. He is known for his conscious lyrics as well as his prowess in Video Editing and Directing. He made his break in as part of a rap group known as the &quot;Kalifate&quot;.
             </p>
             <p className='text-lg pt-7 pb-7 text-black text-justify'>
-                Psalmurai released his album, "Unknown Error," in 2021. The album was a critical and commercial success, and it helped to establish Psalmurai as one of the most relevant artists in Nigerian Hip Hop. He has been consistently releasing music and had collaborations with top Nigerian artists like Chizzy Tha Don, Teck Zilla, Bionic the Soul King, Rheymophoebus, XYZ and EX&apos;O just to mention a few.
+                Psalmurai released his album, &quot;Unknown Error,&quot; in 2021. The album was a critical and commercial success, and it helped to establish Psalmurai as one of the most relevant artists in Nigerian Hip Hop. He has been consistently releasing music and had collaborations with top Nigerian artists like Chizzy Tha Don, Teck Zilla, Bionic the Soul King, Rheymophoebus, XYZ and EX&apos;O just to mention a few.
             </p>
 
             <p className='text-lg pt-7 pb-7 text-black text-justify'>
