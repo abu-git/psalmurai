@@ -4,6 +4,19 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { motion, AnimatePresence } from 'framer-motion'
 
+/* Google Analytics--------------
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNCM7K6QHG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VNCM7K6QHG');
+    </script>
+*/
+
+
 /* Page Loader settings ----------------------------------*/
 function Loading(url){
   const router = useRouter()
@@ -51,6 +64,17 @@ function Loading(url){
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Script strategy='lazyOnload' src={`https://www.googletagmanager.com/gtag/js?id=G-VNCM7K6QHG`} />
+      <Script id='analytics' strategy='lazyOnload'>
+        {
+          `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'G-VNCM7K6QHG');
+          `
+        }
+      </Script>
       <Loading />
       <Component {...pageProps} />
     </>
