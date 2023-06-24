@@ -27,7 +27,7 @@ function TheRelease({release, tracklist, ogImageUrl}) {
                 <meta property="og:type" content="website" />
 
                 <meta property='twitter:card' content='summary_large_image' />
-                <meta property='twitter:title' content="Psalmurai | Official Website" />
+                <meta property='twitter:title' content={`Psalmurai | ${release.title}`} />
                 <meta property='twitter:image' content={ogImageUrl} />
                 <meta name="twitter:creator" content="@reachmhp"/>
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
