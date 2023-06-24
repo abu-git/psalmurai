@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 function RightVideo({title, content, embed}) {
+
     return (
         <div className='flex flex-col md:flex-row justify-center items-center py-16'>
             <div className='order-2 md:w-2/3'>
