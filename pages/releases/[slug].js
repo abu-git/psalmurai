@@ -15,6 +15,27 @@ import PsalmuraiRelease from '@/models/PsalmuraiRelease'
 function TheRelease({release, tracklist, ogImageUrl}) {
     return(
         <>
+            <Head>
+                <title>Psalmurai | Releases</title>
+                <meta name="description" content="Psalmurai | Official Website" />
+                <meta property='og:description' content={`Psalmurai | ${release.title}`} />
+                <meta  property='og:image' itemProp="image" content={ogImageUrl} />
+                <meta  property='og:image:secure_url' content={ogImageUrl} />
+                <meta property="og:url" content={`https://psalmurai.vercel.app/releases/${release.slug}`} />
+                <meta property="og:image:width" content="2024" />
+                <meta property="og:image:height" content="1012" />
+                <meta property="og:type" content="website" />
+
+                <meta property='twitter:card' content='summary_large_image' />
+                <meta property='twitter:title' content="Psalmurai | Official Website" />
+                <meta property='twitter:image' content={ogImageUrl} />
+                <meta name="twitter:creator" content="@reachmhp"/>
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <motion.main
                 exit={{ opacity: 0 }}
                 initial={{ opacity: 0 }}
