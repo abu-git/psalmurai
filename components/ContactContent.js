@@ -63,7 +63,7 @@ function ContactContent() {
 
     return (
         <div className='bg-[#f4fdee] py-14 px-8 md:px-32 lg:px-72 md:mt-16 lg:mt-20 w-full'>
-            <h4 className='text-center font-bold text-black text-xl md:mt-[5vh] lg:mt-[17vh] pt-7'>leave a message</h4>
+            <h4 className='text-center font-bold text-black text-xl md:mt-[2vh] lg:mt-[5vh] pt-7'>leave a message</h4>
 
             <div className='flex justify-center mt-9'>
                 <form className='w-96' onSubmit={handleSubmit}>

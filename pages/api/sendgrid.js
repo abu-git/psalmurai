@@ -7,7 +7,7 @@ async function sendEmail(req, res){
     
     try{
         await sgMail.send({
-            to: 'abu.sammie@gmail.com',
+            to: 'psalmurai@gmail.com',
             from: '3310572@myuwc.ac.za',
             subject: `From: ${req.body.name} with mail ${req.body.email}`,
             text: req.body.message,

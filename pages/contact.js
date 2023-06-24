@@ -33,6 +33,7 @@ function Contact() {
                 <Navigation />
                 <MiniLanding header="contact" />
                 <ContactContent />
+                <Footer />
             </main>
         </>
     )
