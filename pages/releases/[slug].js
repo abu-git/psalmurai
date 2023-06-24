@@ -5,6 +5,8 @@ import MiniLanding from '@/components/MiniLanding'
 import SlugNavigation from '@/components/SlugNavigation'
 import Footer from '@/components/Footer'
 
+import { motion } from 'framer-motion'
+
 import { v2 as cloudinary } from 'cloudinary'
 
 import dbConnect from '@/lib/dbConnect'
@@ -13,7 +15,12 @@ import PsalmuraiRelease from '@/models/PsalmuraiRelease'
 function TheRelease({release, tracklist, ogImageUrl}) {
     return(
         <>
-            <main>
+            <motion.main
+                exit={{ opacity: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.95 }}
+            >
                 <SlugNavigation />
                 <MiniLanding header={release.title} />
 
@@ -66,7 +73,9 @@ function TheRelease({release, tracklist, ogImageUrl}) {
                         </div>
                     </main>
                 </section>
-            </main>
+
+                <Footer />
+            </motion.main>
         </>
     )
 }

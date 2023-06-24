@@ -9,3 +9,130 @@
     font-family: "Amiri";
   }
 }
+
+/* loader CSS */
+.jelly-triangle {
+  --uib-size: 42px;
+  --uib-speed: 1.25s;
+  --uib-color: #ffffff;
+  position: relative;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  filter: url('#uib-jelly-triangle-ooze');
+}
+ 
+.jelly-triangle__dot,
+.jelly-triangle::before,
+.jelly-triangle::after {
+  content: '';
+  position: absolute;
+  width: 33%;
+  height: 33%;
+  background: var(--uib-color);
+  border-radius: 100%;
+}
+ 
+.jelly-triangle__dot {
+  top: 6%;
+  left: 30%;
+  animation: grow0 var(--uib-speed) ease infinite;
+}
+ 
+.jelly-triangle::before {
+  bottom: 6%;
+  right: 0;
+  animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.666)
+     infinite;
+}
+ 
+.jelly-triangle::after {
+  bottom: 6%;
+  left: 0;
+  animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.333)
+     infinite;
+}
+ 
+.jelly-triangle__traveler {
+  position: absolute;
+  top: 6%;
+  left: 30%;
+  width: 33%;
+  height: 33%;
+  background: var(--uib-color);
+  border-radius: 100%;
+  animation: triangulate var(--uib-speed) ease infinite;
+}
+ 
+.jelly-maker {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+ 
+@keyframes triangulate {
+  0%,
+   100% {
+   transform: none;
+  }
+ 
+  33.333% {
+   transform: translate(120%, 175%);
+  }
+ 
+  66.666% {
+   transform: translate(-95%, 175%);
+  }
+}
+ 
+@keyframes grow0 {
+  0%,
+   100% {
+   transform: scale(1.5);
+  }
+ 
+  20%,
+   70% {
+   transform: none;
+  }
+}
+
+
+/* more releases btn css */
+.button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+ 
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+}
+ 
+.button:hover {
+  color: #e8e8e8;
+}
+ 
+.button:hover::before {
+  width: 100%;
+}

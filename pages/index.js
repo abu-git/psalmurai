@@ -5,6 +5,7 @@ import AfterLanding from '@/components/AfterLanding'
 import Footer from '@/components/Footer'
 
 
+import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
@@ -18,12 +19,17 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
         <link rel="manifest" href="/site.webmanifest"/>
       </Head>
-      <main>
+      <motion.main
+        exit={{ opacity: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
         <Navigation />
         <Landing />
         <AfterLanding />
         <Footer />
-      </main>
+      </motion.main>
     </>
   )
 }
