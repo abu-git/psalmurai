@@ -16,7 +16,7 @@ function TheRelease({release, tracklist, ogImageUrl}) {
     return(
         <>
             <Head>
-                <title>Psalmurai | Releases</title>
+                <title>Psalmurai | {release.title}</title>
                 <meta name="description" content="Psalmurai | Official Website" />
                 <meta property='og:description' content={`Psalmurai | ${release.title}`} />
                 <meta  property='og:image' itemProp="image" content={ogImageUrl} />
