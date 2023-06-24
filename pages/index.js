@@ -14,8 +14,8 @@ export default function Home() {
           <title>Psalmurai</title>
           <meta name="description" content="Psalmurai | Official Website" />
           <meta property='og:description' content="Psalmurai is a Nigerian Hip Hop artist, Video Director and VFX Specialist" />
-          <meta  property='og:image' itemProp="image" content='https://res.cloudinary.com/dbqn6vejg/image/upload/v1687577841/metapagesBG_znumck.jpg'/>
-          <meta  property='og:image:secure_url' content='https://res.cloudinary.com/dbqn6vejg/image/upload/v1687577841/metapagesBG_znumck.jpg'/>
+          <meta  property='og:image' itemProp="image" content='https://res.cloudinary.com/dbqn6vejg/image/upload/v1687577841/meta_cq7ixy.jpg'/>
+          <meta  property='og:image:secure_url' content='https://res.cloudinary.com/dbqn6vejg/image/upload/v1687577841/meta_cq7ixy.jpg'/>
           <meta property="og:url" content="https://psalmurai.vercel.app" />
           <meta property="og:image:width" content="2024" />
           <meta property="og:image:height" content="1012" />
@@ -23,7 +23,7 @@ export default function Home() {
 
           <meta property='twitter:card' content='summary_large_image' />
           <meta property='twitter:title' content="Psalmurai | Official Website" />
-          <meta property='twitter:image' content='https://res.cloudinary.com/dbqn6vejg/image/upload/v1687577841/metapagesBG_znumck.jpg' />
+          <meta property='twitter:image' content='https://res.cloudinary.com/dbqn6vejg/image/upload/v1687577841/meta_cq7ixy.jpg' />
           <meta name="twitter:creator" content="@reachmhp"/>
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
